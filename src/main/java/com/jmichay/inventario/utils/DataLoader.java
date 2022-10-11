@@ -45,8 +45,6 @@ public class DataLoader implements ApplicationRunner {
         vaccine = new Vaccine();
         vaccine.setName("Jhonson&Jhonson");
         vaccineRepository.save(vaccine);
-
-        System.out.println(roleSave);
         User user = new User();
         user.setUsername("admin");
         user.setPassword(new BCryptPasswordEncoder().encode("admin"));

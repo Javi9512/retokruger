@@ -19,7 +19,6 @@ public class VaccineServiceImpl implements VaccineService {
         return vaccineRepository.findById(id).get();
     }
 
-    // Obtener todas las vacunas
     @Override
     public List<Vaccine> getAllVaccines() {
         return vaccineRepository.findAll();

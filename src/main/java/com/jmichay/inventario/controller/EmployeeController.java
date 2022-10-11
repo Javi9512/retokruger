@@ -72,7 +72,6 @@ public class EmployeeController {
 
         Employee employeeS = employeeService.findByIdentification(employee.getIdentification());
         if (employeeS != null) {
-            // Retornar un mensaje que ya existe el empleado
             return ResponseEntity.badRequest()
                     .body(Map.of("message",
                             "Ya existe un empleado con la identificacion " + employee.getIdentification()));
@@ -160,7 +159,6 @@ public class EmployeeController {
     @GetMapping("/date/{date1}/{date2}")
     public ResponseEntity<List<Employee>> getAllEmployeesByDate(@PathVariable String date1,
             @PathVariable String date2) {
-        // Convertir las fechas a Date
         Date dateOne = new Date();
         Date dateTwo = new Date();
         try {

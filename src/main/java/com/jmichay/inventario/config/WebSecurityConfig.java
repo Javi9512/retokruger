@@ -12,9 +12,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    // @Autowired
-    // private UserDetailServiceImpl userDetailsService;
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
@@ -22,16 +19,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/**").hasRole("ADMIN")
                 .antMatchers(HttpMethod.PUT, "/api/employee").hasRole("EMPLOYEE")
                 .antMatchers(HttpMethod.GET, "/api/employee/{identificacion}").hasRole("EMPLOYEE")
-                // .antMatchers(HttpMethod.GET, "/orders/photo2/{id}").permitAll()
                 .anyRequest().authenticated().and().httpBasic();
         ;
     }
-
-    // @Override
-    // protected void configure(AuthenticationManagerBuilder auth) throws Exception
-    // {
-    // auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
-    // }
 
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
