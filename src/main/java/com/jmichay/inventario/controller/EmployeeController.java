@@ -156,7 +156,7 @@ public class EmployeeController {
         return ResponseEntity.ok(employeeService.findByVaccine(vaccine));
     }
 
-    @ApiOperation(value = "Obtener empleados por fecha de vacunacion", response = Iterable.class)
+    @ApiOperation(value = "Obtener empleados por un rango de fechas de vacunacion, formato: yyy-MM-dd", response = Iterable.class)
     @GetMapping("/date/{date1}/{date2}")
     public ResponseEntity<List<Employee>> getAllEmployeesByDate(@PathVariable String date1,
             @PathVariable String date2) {
