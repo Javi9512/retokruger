@@ -80,3 +80,7 @@ Usar las credenciales:
 - Cuando se crea un empleado nuevo, se le asigna un rol de usuario por defecto "EMPLOYEE". El usuario generado esta conformado por el primer nombre, el primer apellido del empleado y las 3 primeras letras de la identificacion, por ejemplo: si el empleado se llama "Juan Perez", con identificacion "1234567890" el usuario sera "juan.perez123".
 - La contraseña es generada de manera aleatoria y nos devuelve el usuario y la contraseña en el body de la respuesta.
 - Al iniciar el proyecto se crean las vacunas, los roles y el usuario admin por defecto.
+
+## Esquema de datos
+![Esquema](https://user-images.githubusercontent.com/52105514/195209388-91f499c8-02b6-4646-b7f1-17c8a0476df5.jpg)
+
