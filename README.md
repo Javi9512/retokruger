@@ -84,3 +84,6 @@ Usar las credenciales:
 ## Esquema de datos
 ![Esquema](https://user-images.githubusercontent.com/52105514/195209388-91f499c8-02b6-4646-b7f1-17c8a0476df5.jpg)
 
+## Ejemplos de peticiones
+
+
