@@ -16,10 +16,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/api/**").hasRole("ADMIN")
-                .antMatchers(HttpMethod.PUT, "/api/employee").hasRole("EMPLOYEE")
+                .antMatchers(HttpMethod.PUT, "/api/employee/{identificacion}").hasRole("EMPLOYEE")
                 .antMatchers(HttpMethod.GET, "/api/employee/{identificacion}").hasRole("EMPLOYEE")
-                .anyRequest().authenticated().and().httpBasic();
+                .antMatchers("/api/employee/**").hasRole("ADMIN")
+                .and().httpBasic();
         ;
     }
 
