@@ -85,5 +85,11 @@ Usar las credenciales:
 ![Esquema](https://user-images.githubusercontent.com/52105514/195209388-91f499c8-02b6-4646-b7f1-17c8a0476df5.jpg)
 
 ## Ejemplos de peticiones
+- Creacion de un nuevo empleado
+![Peticion 1](https://user-images.githubusercontent.com/52105514/195222058-68c7a853-b22c-4bac-ae88-46d40ef1aa04.jpg)
+![Peticion 2](https://user-images.githubusercontent.com/52105514/195223523-b7aa7609-407a-4404-aeba-65fc5e4d1baa.jpg)
+- Obtener empleados en una fecha determinada de vacunacion
+![Peticion 4](https://user-images.githubusercontent.com/52105514/195223605-0a20f893-882a-4d30-b117-8d93f5d07ed3.jpg)
+
 
 
